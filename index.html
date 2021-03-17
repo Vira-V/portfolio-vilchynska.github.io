@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #d4cccc;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    font-size: 40px;
+}
+.row {
+    margin: 8px -16px;
+}
+.row,
+.row > .column {
+    padding: 8px;
+}
+.column {
+    float: left;
+    width: 25%;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    background-color: #e6cfcf;
+    padding: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.content a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+.content a:hover{
+    color: #b31818;
+}
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+.profile_photo img{
+  width: 200px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    font-size: 20px;  
+}
+a:hover{
+    color: #b31818;
+}
+.social-icons {
+  text-align: left;
+  padding: 0;
+  }  
+.social-icons li {
+  display:inline-block;
+  list-style-type:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  }
+.social-icons li a {
+  border-bottom: none;
+  }
+.social-icons li img {
+  width:70px;
+  height:70px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+<body>
+<section>
+    <div class="profile_photo"><img src="image/DSC_0036.JPG"></div>
+    <h1>Vira Vilchynska</h1>
+    <h2>26 years</h2>
+    <hr>
+    <p><a href="mailto:vira.vilchinska.dk@gmail.com">vira.vilchinska.dk@gmail.com</a></p>
+    <p><a href="tel:+380932134690">+38 0932134690</a></p>
+
+    <ul class="social-icons">
+        <li><a href= "https://www.facebook.com/profile.php?id=100010405129210" target="_blank"><img src='image/facebook.png' /></a></li>
+        <li><a href="https://www.linkedin.com/in/vira-vilchynska-7696b1209/" target="_blank"><img src='image/linkedIn.png' /></a></li>
+    </ul>
+
+    <h3>Projects:</h3>
+    <div class="row">
+      <div class="column">
+        <div class="content">
+            <a href="Dexter/index.html">Dexter</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <a href="Minimal/index.html">Minimal</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <a href="Rafael/index.html">Rafael Lancher</a>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+            <a href="Bagdum/index.html">Bagdum</a>
+        </div>
+      </div>
+    </div>
+    
+    </section>
+
+</body>
+</html>
